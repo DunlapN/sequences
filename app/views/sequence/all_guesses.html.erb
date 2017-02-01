@@ -16,15 +16,19 @@
 
 <p>Now it’s your turn. Enter a number sequence in the boxes below, and we’ll tell you whether it satisfies the rule or not. You can test as many sequences as you want.</p>
 
+
 <ul>
   <li>
-    3, 4, 4
-
-      No.
+    <%= @guesses %>
   </li>
 </ul>
 
-<form action="">
+<!-- > -->
+
+
+
+
+<form action="/attempt">
   <p>
     Enter a sequence:
   </p>
@@ -43,9 +47,10 @@
   </button>
 </form>
 
+
 <hr>
 
-<form action="">
+<form action="/show_answer">
   <p>
     When you think you know the rule, describe it in words below and then submit your answer. <strong>Make sure you’re right; you won’t get a second chance.</strong>
   </p>

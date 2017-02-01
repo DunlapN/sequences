@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get("/", { :controller => "sequence", :action => "all_guesses"})
   get("/all_guesses", { :controller => "sequence", :action => "all_guesses"})
   get("/show_answer", { :controller => "sequence", :action => "show_answer"})
+  get("/attempt", { :controller => "sequence", :action => "attempt"})
+
 
 
 
